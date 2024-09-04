@@ -1,0 +1,25 @@
+.bg-cover1 {
+    position: relative;
+    background-image: url('../../assets/h1_bg-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar-wrapper1 {
+    position: relative;
+    z-index: 2;
+}
+
+.bg-cover1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    --background-overlay: '';
+    background-color: #000;
+    z-index: 1;
+    opacity: 0.4;
+}

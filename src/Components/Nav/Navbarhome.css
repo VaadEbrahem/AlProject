@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .text-gradient {
+        background: linear-gradient(135deg, #02CE80 0%, #7BD706 51%, #02CE80 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .bg-gradient-button {
+        background: linear-gradient(135deg, #02CE80 0%, #7BD706 51%, #02CE80 100%);
+    }
+
+    .bg-gradient-button:hover {
+        background: linear-gradient(135deg, #7BD706 0%, #02CE80 51%, #7BD706 100%);
+    }
+
+    .elementor-headline {
+        background: linear-gradient(135deg, #02CE80 0%, #7BD706 51%, #02CE80 100%) 0 / 200%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-box-decoration-break: clone;
+    }
+
+    .icon-gradient-button {
+        background: linear-gradient(135deg, #02CE80 0%, #7BD706 51%, #02CE80 100%);
+        border: none;
+    }
+
+    .icon-gradient-button:hover {
+        background: linear-gradient(135deg, #7BD706 0%, #02CE80 51%, #7BD706 100%);
+    }
+
+    .icon-class {
+        transition: color 0.3s ease;
+        color: #7BD706;
+    }
+
+    .Imagte-gradient-button:hover {
+        background: linear-gradient(135deg, #7BD706 0%, #02CE80 51%, #7BD706 100%);
+    }
+}
+
+
+    @layer components {
+        @media (max-width: 700px) {
+        .fontSize {
+            @apply text-[40px]; /* تقليل حجم الخط عند الشاشات الصغيرة */
+        }
+        .flex-wrap {
+            @apply flex-col items-center; /* ترتيب العناصر عموديًا على الشاشات الصغيرة */
+        }
+        .mr-4 {
+            @apply mr-0 mb-2; /* إزالة المسافة اليمنى وإضافة مسافة أسفل العناصر */
+        }
+        }
+    }
+
+.navbar-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.bg-cover {
+    position: relative;
+    background-image: url('../../assets/revslider_h1-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-cover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../assets/revslider_h1-pattern.png');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+
+

@@ -1,0 +1,69 @@
+.bg-cover2 {
+    background-image: url('../../assets/h1_bg-2.jpg');
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+}
+
+.bg-cover2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, #0d0f12 0%, rgba(0, 0, 0, 0) 100%); 
+    z-index: 1;
+}
+
+.navbar-wrapper2 {
+    position: relative;
+    z-index: 2;
+}
+
+.card-wrapper {
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.card-wrapper::after {
+    content: "";
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0; 
+    bottom: 0; 
+    width: 83%;
+    background: linear-gradient(135deg, #02CE80 0%, rgba(10, 38, 10, 0) 51.04%, #7BD706 140%);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card-wrapper:hover::after {
+    opacity: 1;
+    border: 1px solid #02CE80;
+}
+
+.slick-prev,
+.slick-next {
+    display: none !important; 
+}
+
+.slick-slide {
+    margin: 0 -30px; 
+}
+
+.star-rating {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.imagedo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}

@@ -1,0 +1,39 @@
+/* Scoped styles for the Slick Slider component */
+
+.eimagslick-slider .slick-slide {
+    margin: 0 10px; /* Margins between slides */
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.eimagslick-slider .slick-slide > div {
+    display: flex; /* Ensure each slide is treated as a flex container */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.eimagslick-slider .slick-track {
+    display: flex !important; /* Ensure slides stay in a single line */
+    flex-wrap: nowrap !important; /* Prevent wrapping of slides */
+}
+
+.eimagslick-slider .slick-slide img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    transition: filter 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.eimagslick-slider .slick-slide:hover img {
+    filter: blur(2px); /* Apply blur effect on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.hover-gradient3 {
+    background-color: white;
+    color: black;
+    transition: background 0.3s ease;
+}
+
+.hover-gradient3:hover {
+    background: linear-gradient(135deg, #7BD706 0%, #02CE80 51%, #7BD706 100%);
+    color: white;
+}

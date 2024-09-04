@@ -1,0 +1,79 @@
+.bgCover {
+  position: relative;
+  background-image: url('../../assets/ft1_bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.bgCover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #0d0f12 5%, rgba(0, 0, 0, 0) 100%);
+  z-index: 1;
+}
+
+input {
+  z-index: 10;
+  position: relative;
+}
+
+
+/* 
+  .planet-background-1 {
+    background: radial-gradient(80.36% 80.36% at 18.95% 26.51%, #60DBFF 0.56%, #60D5FF 9.37%, #5FC4FF 21.1%, #5DA9FF 34.46%, #5A82FF 49.03%, #5751FF 64.42%, #5643FF 68.44%, #563DF8 74.32%, #552EE5 82.82%, #5315C6 92.87%, #5200AB 100%);
+    background-size: 150% 150%;
+    animation: none; /* Disable the initial rotation animation 
+  } */
+
+
+
+.inputsbmit {
+  padding: 20px;
+  background: rgba(255, 255, 255, .07);
+  border: 1px solid rgba(255, 255, 255, .11);
+  border-left: 0;
+  border-radius: 0 9px 9px 0;
+  height: 60px;
+  gap: 10px;
+}
+
+.inputsbmit::before {
+  position: absolute;
+  left: 0;
+  content: "";
+  height: 27px;
+  width: 1px;
+  opacity: .13;
+  background: #d9d9d9;
+}
+
+
+.submit-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #02CE80 0%, #7BD706 51%, #02CE80 100%) 0 / 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.FaTelegramPlanenew {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+}
+
